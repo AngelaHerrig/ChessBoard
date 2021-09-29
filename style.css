@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url(./Background.jpg);
+
+    background-size: cover;
+}
+
+div {
+    width: 5rem;
+    height: 5rem;
+
+}
+
+div:hover {
+
+    background: linear-gradient(145deg, #cbcde6, #9b9dce);
+    box-shadow: 6px -5px 15px #3e4286,
+        -3px -5px 10px #696b97;
+}
+
+.black {
+    background-color: rgb(223, 147, 7);
+}
+
+.white {
+    background-color: blanchedalmond;
+}
+
+/* button rotate */
+.button {
+
+    color: white;
+    background-color: rgb(218, 67, 30);
+    padding: 10px 20px;
+    border-radius: 2px;
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+    z-index: 5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+input {
+    display: none;
+
+}
+
+input:checked+section {
+    transform: translateX(-50%) rotate(90deg);
+    
+}
+
+section {
+    transition: all 1s;
+
+    /* größe */
+    width: 720px;
+    height: 720px;
+
+    /* position */
+    position: relative;
+    left: 50%;
+    top: 10vh;
+    transform: translate(-50%);
+
+    /* Rahmen */
+    border: rgb(68, 39, 15) solid 40px;
+    border-radius: 0px;
+    background: #6b6b6b;
+    box-shadow: 27px 27px 69px #a4a4a4,
+        -27px -27px 69px #6e6e6e;
+
+
+    /* anordnung divs */
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+/* Name Hover Reihe 3 */
+p {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.name p {
+    display: none;
+
+}
+
+.name:hover p {
+    display: block;
+    color: rgb(4, 36, 124);
+
+}
+
+/* Chess letter */
+
+.letter {
+    position: relative;
+    top: -100px;
+    display: none;
+}
+
+.letterbox:hover .icon {
+    visibility: hidden;
+}
+
+.letterbox:hover .letter {
+    display: block;
+    color: rgb(196, 10, 10);
+}
+
+
+/* options */
+
+/* Bauern */
+
+#box-2a:hover~#box-3a {
+    border: greenyellow solid 2px;
+}
+
+#box-7a:hover~#box-6a {
+    border: greenyellow solid 2px;
+}
+
+
+#box-2a:hover~#box-4a {
+    border: greenyellow solid 2px;
+}
+
+#box-2b:hover~#box-3b {
+    border: greenyellow solid 2px;
+}
+
+#box-2b:hover~#box-4b {
+    border: greenyellow solid 2px;
+}
+
+#box-2c:hover~#box-3c {
+    border: greenyellow solid 2px;
+}
+
+#box-2c:hover~#box-4c {
+    border: greenyellow solid 2px;
+}
+
+#box-2d:hover~#box-3d {
+    border: greenyellow solid 2px;
+}
+
+#box-2d:hover~#box-4d {
+    border: greenyellow solid 2px;
+}
+
+#box-2e:hover~#box-3e {
+    border: greenyellow solid 2px;
+}
+
+#box-2e:hover~#box-4e {
+    border: greenyellow solid 2px;
+}
+
+#box-2f:hover~#box-3f {
+    border: greenyellow solid 2px;
+}
+
+#box-2f:hover~#box-4f {
+    border: greenyellow solid 2px;
+}
+
+#box-2g:hover~#box-3g {
+    border: greenyellow solid 2px;
+}
+
+#box-2g:hover~#box-4g {
+    border: greenyellow solid 2px;
+}
+
+/* Pferde */
+#box-1b:hover~#box-3a {
+    border: greenyellow solid 2px;
+}
+
+#box-2h:hover~#box-3h {
+    border: greenyellow solid 2px;
+}
+
+#box-2h:hover~#box-4h {
+    border: greenyellow solid 2px;
+}
+
+#box-1b:hover~#box-3c {
+    border: greenyellow solid 2px;
+}
+
+#box-1g:hover~#box-3f {
+    border: greenyellow solid 2px;
+}
+
+#box-1g:hover~#box-3h {
+    border: greenyellow solid 2px;
+}
+
+/* turm und springer, König, Königin */
+#box-1a:hover,
+#box-1c:hover,
+#box-1d:hover,
+#box-1e:hover,
+#box-1f:hover,
+#box-1h:hover {
+    border: red solid 2px;
+}
